@@ -270,7 +270,7 @@ Online tools like [PlantText](https://www.planttext.com/) do not support large d
 - use `swiftplantuml` to generate the script and
 - generate the actual image with `plantuml` locally
 
-Here is the respective command (which assumes that `plantuml.jar` was downloaded in the current directory from which `swifptlantuml` runs)
+Here is the respective command (which assumes that `plantuml.jar` was downloaded in the current directory from which `swiftplantuml` runs)
 
 ```bash
 swiftplantuml ./Sources/ --output consoleOnly > sources.txt | java -DPLANTUML_LIMIT_SIZE=8192 -jar plantuml.jar $1
@@ -288,7 +288,7 @@ In the table below you see the difference of class diagram output based on the s
 
 ## Generate UML documentation from a binary framework
 
-You can use `swifplantuml` to parse the `.swiftmodule` file of a binary framework, for details and a concrete example please read my article [Generate UML documentation from a binary framework (xcframework)](https://blog.eidinger.info/generate-uml-documentation-from-a-binary-framework-xcframework).
+You can use `swiftplantuml` to parse the `.swiftmodule` file of a binary framework, for details and a concrete example please read my article [Generate UML documentation from a binary framework (xcframework)](https://blog.eidinger.info/generate-uml-documentation-from-a-binary-framework-xcframework).
 
 ## Planned improvements
 - being able to render associations between elements
